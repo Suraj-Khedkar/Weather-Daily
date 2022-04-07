@@ -1,0 +1,16 @@
+{
+    "name": "Weather Daily",
+    "description":"Check current weather condition at your IP address",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_title": "Click to check weather",
+      "default_popup": "popup.html",
+      "default_logo": "new_logo.png"
+    },
+    "icons":{
+        "128": "logo.png",
+        "64" : "outer_logo.png"
+    },
+    "host_permissions":["http://ip-api.com/json/*","https://weatherapi-com.p.rapidapi.com/current.json/*"]
+  }

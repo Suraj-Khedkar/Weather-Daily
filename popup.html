@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen - Weather Forecast</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/weather-icons/0.0.1/css/weather-icons.min.css'>
+	<!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/weather-icons/0.0.1/font/weathericons-regular-webfont.svg'> -->
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+	<div class="body">
+		<div class="weather-forcast-holder">
+			<div class="weather-card">
+				<div class="wc-top">
+					<div class="wc-temp" >
+						<span id="current-weather-image-container">
+							<img src="" alt="" id="current-weather-image">
+						</span>
+						<span id="temperature"></span>
+						<span id="unit">
+							<i class="wi-celcius" size-data="small"></i>
+						</span>
+					</div>
+					<div class="location-container">
+						<span id="current-weather"></span>
+						<span id="location"></span>
+						<span id="datetime"></span>
+					</div>
+				</div>
+				<div class="wc-bottom">
+					<div class="wc-city"></div>
+					<div class="wc-conditions">
+						<div class="wc-cond">
+							<i class="wi-cloudy" size-data="small"></i>
+							<div class="sunrise" id="cloud"></div>
+						</div>
+						<div class="wc-cond">
+							<i class="wi-rain" size-data="small"></i>
+							<div class="sunset" id="percip"></div>
+						</div>
+						<div class="wc-cond">
+						<i class="" size-data="small">H</i>
+							<div class="humidity" id="humidity"></div>
+						</div>
+						<div class="wc-cond">
+						<i class="" size-data="small">P</i>
+							<div class="pressure" id="pressure"></div>
+						</div>
+							<div class="wc-cond">
+						<i class="wi-windy" size-data="small"></i>
+							<div class="windspeed" id="windspeed"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
