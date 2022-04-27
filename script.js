@@ -14,9 +14,12 @@ fetch('http://ip-api.com/json',{
 	})
     .then(function(response) {
         response.json().then(jsonData => {
-            ip_address=String(jsonData.query);
+            // ip_address=String(jsonData.query);
+            lat=String(jsonData.lat);
+            lon=String(jsonData.lon);
+            const qp=lat+','+lon;
             console.log(ip_address);
-            fetch('https://weatherapi-com.p.rapidapi.com/current.json?'+ new URLSearchParams({q:ip_address}), options)
+            fetch('https://weatherapi-com.p.rapidapi.com/current.json?'+ new URLSearchParams({q:qp}), options)
                 .then(response=>response.json())
                 .then(weatherData => {
                     const location = weatherData.location;
